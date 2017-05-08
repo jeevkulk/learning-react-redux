@@ -1,8 +1,8 @@
 import React from "react";
 import {connect} from "react-redux";
 
-import { Header } from "./Header";
-import { Home } from "./Home";
+import { Header } from "../components/Header";
+import { Home } from "../components/Home";
 
 
 class App extends React.Component {
