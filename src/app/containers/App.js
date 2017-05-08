@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 
 import { Header } from "../components/Header";
 import { Home } from "../components/Home";
+import { increaseCost } from "../actions/productAction";
 
 
 class App extends React.Component {
@@ -27,10 +28,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         increaseCost: (increase) => {
-            dispatch({
-                type: "INCREASE_COST",
-                value: increase
-            });
+            dispatch(increaseCost(increase));
         }
     }
 }
